@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Sidenav</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ff69b4" />
+    <meta name="description" content="🤘" />
+    <link type="Image/x-icon" href="favicon.ico" rel="icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bundle.css" />
+    <link rel="stylesheet" href="css/colorpicker.css" />
+  </head>
+  <body>
+    <aside id="sidenav-open">
+      <nav>
+        <h4>My</h4>
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Preferences</a>
+        <a href="#">Archive</a>
+
+        <h4>Settings</h4>
+        <a href="#">Accessibility</a>
+        <a href="#">Theme</a>
+        <a href="#">Admin</a>
+      </nav>
+
+      <a
+        href="#"
+        id="sidenav-close"
+        title="Close Menu"
+        aria-label="Close Menu"
+        onclick="window.history.back()"
+      ></a>
+    </aside>
+
+    <main id="top-of-site">
+      <header>
+        <h1>Site Title</h1>
+        <section class="icons">
+          <dialog id="serch-dialog">
+            <div class="search">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search..."
+              />
+              <div id="serch-close" class="search__icon close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M456.69,421.39,362.6,327.3a173.81,173.81,0,0,0,34.84-104.58C397.44,126.38,319.06,48,222.72,48S48,126.38,48,222.72s78.38,174.72,174.72,174.72A173.81,173.81,0,0,0,327.3,362.6l94.09,94.09a25,25,0,0,0,35.3-35.3ZM97.92,222.72a124.8,124.8,0,1,1,124.8,124.8A124.95,124.95,0,0,1,97.92,222.72Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </dialog>
+
+          <div id="Serch">
+            <a id="show-serch" class="ico">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.0726 10.4326C12.4801 10.4326 10.4 12.5451 10.4 15.1053C10.4 17.6978 12.5125 19.7779 15.0726 19.7779C17.6651 19.7779 19.7453 17.6654 19.7453 15.1053C19.744 12.544 17.664 10.4326 15.0726 10.4326Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M16.0327 0.447479C7.42401 0.447479 0.447693 7.4238 0.447693 16.0324C0.447693 24.6398 7.42401 31.6161 16.0314 31.6161C24.64 31.6161 31.6163 24.6398 31.6163 16.0324C31.6163 7.4238 24.64 0.447479 16.0327 0.447479ZM23.6163 24.0324C23.3926 24.2562 23.0401 24.385 22.6563 24.385C22.2726 24.385 21.9526 24.2575 21.6963 24.0324L18.7526 21.0887L18.4651 21.2487C17.4088 21.825 16.2576 22.145 15.0724 22.145C11.1998 22.145 8.06509 19.0087 8.06509 15.1376C8.06509 11.265 11.2013 8.13023 15.0724 8.13023C18.9451 8.13023 22.0798 11.2665 22.0798 15.1376C22.0798 16.5138 21.6961 17.8251 20.9273 18.9776L20.7348 19.2976L23.6473 22.2101C23.8711 22.4664 24.0311 22.7864 24.0311 23.1376C23.9998 23.4563 23.8723 23.7763 23.616 24.0326L23.6163 24.0324Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <dialog id="dialog">
+            <div id="Settings" class="card">
+              <div class="segmented-control butons">
+                <input
+                  type="radio"
+                  name="radio2"
+                  value="3"
+                  id="tab-1"
+                  checked=""
+                />
+                <label for="tab-1" class="segmented-control__1">
+                  <p>Tab 1</p></label
+                >
+
+                <input type="radio" name="radio2" value="4" id="tab-2" />
+                <label for="tab-2" class="segmented-control__2">
+                  <p>Tab 2</p></label
+                >
+
+                <input type="radio" name="radio2" value="5" id="tab-3" />
+                <label for="tab-3" class="segmented-control__3">
+                  <p>Tab 3</p></label
+                >
+
+                <div class="segmented-control__color"></div>
+
+                <div id="tabs">
+                  <div class="slid">
+                    <form id="color-form" method="dialog">
+                      <div class="inputs">
+                        <label class="color-slider-label"
+                          >Hue <span id="h_value">247</span>
+                          <input
+                            id="hue"
+                            class="color-slider"
+                            type="range"
+                            min="0"
+                            max="360"
+                            step="1"
+                            value="247" />
+                          <br /></label
+                        ><label class="color-slider-label"
+                          >Saturation <span id="s_value">100</span>
+                          <input
+                            id="saturation"
+                            class="color-slider"
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="1"
+                            value="100" />
+                          <br /></label
+                        ><label class="color-slider-label"
+                          >Lightness <span id="l_value">70</span>
+                          <input
+                            id="lightness"
+                            class="color-slider"
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="1"
+                            value="70" />
+                          <br /></label
+                        ><label class="color-slider-label"
+                          >Alpha <span id="a_value">0.8</span>
+                          <input
+                            id="alfa"
+                            class="color-slider"
+                            type="range"
+                            min="0"
+                            max="1"
+                            step=".1"
+                            value=".8"
+                          />
+                        </label>
+                      </div>
+                      <div>
+                        <input type="submit" id="reset" value="Reset" />
+                        <input
+                          type="submit"
+                          id="cancel"
+                          value="Cancel"
+                          formnovalidate
+                        />
+                        <input type="submit" id="save" value="Save" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="slid">
+                    <h2>2</h2>
+                    <section class="gradient">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 440 52"
+                        style="--transform: translateY(2px) scale(1.1)"
+                        class="TestimonialWrappercurves__Svg-sc-ywmt7o-0 fUfQTM mask"
+                      >
+                        <path
+                          d="M220 1C133.228-1.86 0 33 0 33v18.5h439.5V12s-24.077 14.898-41 21C331.878 57.02 290.781 3.333 220 1z"
+                        ></path>
+                      </svg>
+                    <figure class="colored">
+                      <article>
+                      <img src="img/icons/person-circle.svg" alt="">
+                    </article>
+                    </figure>
+                    </section>
+                  </div>
+                  <div class="slid">
+                    <h2>3</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
+          <div id="Settings" class="ico">
+            <a id="show-dialog">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 1.7C11.5335 1.7 6.48243 4.61655 3.74917 9.35C1.0172 14.0835 1.0172 19.9165 3.74917 24.65C6.48246 29.3835 11.5335 32.3 17 32.3C20.4918 32.3133 23.8809 31.1193 26.5917 28.9199C29.9014 26.2557 31.9559 22.3365 32.2602 18.0984C32.5657 13.8603 31.0954 9.68748 28.2003 6.57682C25.3063 3.46636 21.249 1.69986 17.0003 1.69986L17 1.7ZM27.9956 24.411C27.2651 22.1412 25.014 20.2514 21.9925 19.2447C20.7069 20.6405 18.8967 21.4361 17 21.4361C15.1021 21.4347 13.292 20.6405 12.0074 19.2447C8.98463 20.2514 6.73335 22.1413 6.00439 24.411C4.20212 21.7388 3.43579 18.5008 3.8475 15.3041C4.25921 12.1073 5.82242 9.17082 8.24234 7.04174C10.6622 4.91276 13.7752 3.7387 16.9987 3.7387C20.2221 3.7387 23.3353 4.91276 25.7564 7.04041C28.1763 9.16939 29.7395 12.1057 30.1513 15.3027C30.563 18.4995 29.7966 21.7376 27.9957 24.411L27.9956 24.411Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M22.5049 13.6092C22.5049 16.9919 20.0399 19.736 17 19.736C13.9586 19.736 11.4937 16.9921 11.4937 13.6092C11.4937 10.2251 13.9587 7.48236 17 7.48236C20.0401 7.48236 22.5049 10.2249 22.5049 13.6092Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div id="burger">
+            <a
+              href="#sidenav-open"
+              id="sidenav-button"
+              class="hamburger"
+              title="Open Menu"
+              aria-label="Open Menu"
+            >
+              <svg
+                viewBox="0 0 50 40"
+                role="presentation"
+                focusable="false"
+                aria-label="trigram for heaven symbol"
+              >
+                <line x1="0" x2="100%" y1="10%" y2="10%"></line>
+                <line x1="0" x2="100%" y1="50%" y2="50%"></line>
+                <line x1="0" x2="100%" y1="90%" y2="90%"></line>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </header>
+      <div id="content" class="redacted-script-regular">
+        <div class="wrap">
+          <div class="block shadow">
+            <h2>Homer</h2>
+            <div class="d-flex">
+              <img src="img/homer.png" alt="Homer" />
+              <p class="redacted-script-regular">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus harum, aperiam laborum, fugiat nisi sit saepe nobis
+                exercitationem beatae veritatis mollitia, assumenda delectus
+                alias accusamus sapiente ratione voluptate eius facere!
+              </p>
+            </div>
+          </div>
+          <div class="block shadow">
+            <h2>Mardg</h2>
+            <div class="d-flex">
+              <img src="img/marg.png" alt="Mardg" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus harum, aperiam laborum, fugiat nisi sit saepe nobis
+                exercitationem beatae veritatis mollitia, assumenda delectus
+                alias accusamus sapiente ratione voluptate eius facere!
+              </p>
+            </div>
+          </div>
+          <div class="block shadow">
+            <h2>Bart</h2>
+            <div class="d-flex">
+              <img src="img/Bart.png" alt="Bart" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus harum, aperiam laborum, fugiat nisi sit saepe nobis
+                exercitationem beatae veritatis mollitia, assumenda delectus
+                alias accusamus sapiente ratione voluptate eius facere!
+              </p>
+            </div>
+          </div>
+          <div class="block shadow">
+            <h2>Liza</h2>
+            <div class="d-flex">
+              <img src="img/liza.png" alt="Liza" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus harum, aperiam laborum, fugiat nisi sit saepe nobis
+                exercitationem beatae veritatis mollitia, assumenda delectus
+                alias accusamus sapiente ratione voluptate eius facere!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <article>
+          <h2>Totam Header</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            consectetur, necessitatibus velit officia ut impedit veritatis
+            temporibus soluta? Totam odit cupiditate facilis nisi sunt hic
+            necessitatibus voluptatem nihil doloribus! Enim.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            rerum, amet odio explicabo voluptas eos cum libero, ex esse quasi
+            optio incidunt soluta eligendi labore error corrupti! Dolore,
+            cupiditate porro.
+          </p>
+        </article>
+        <article>
+          <h3>Subhead Totam Odit</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            rerum, amet odio explicabo voluptas eos cum libero, ex esse quasi
+            optio incidunt soluta eligendi labore error corrupti! Dolore,
+            cupiditate porro.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            rerum, amet odio explicabo voluptas eos cum libero, ex esse quasi
+            optio incidunt soluta eligendi labore error corrupti! Dolore,
+            cupiditate porro.
+          </p>
+        </article>
+        <article>
+          <h3>Subhead</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            rerum, amet odio explicabo voluptas eos cum libero, ex esse quasi
+            optio incidunt soluta eligendi labore error corrupti! Dolore,
+            cupiditate porro.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            rerum, amet odio explicabo voluptas eos cum libero, ex esse quasi
+            optio incidunt soluta eligendi labore error corrupti! Dolore,
+            cupiditate porro.
+          </p>
+        </article>
+      </div>
+      <aside id="left">
+        <h2>aside</h2>
+        <div id="left-content">
+          <ul class="list">
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">home</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">1</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">2</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">3</a>
+            </li>
+          </ul>
+          <div class="accordion">
+            <div class="tab">
+              <input type="checkbox" type="radio" id="tab1" name="tab-group" />
+              <label for="tab1" class="tab-title">Что такое HTML5?</label>
+              <section class="tab-content">
+                <p>Под HTML5 обычно подразумевают два разных понятия:</p>
+                <ul>
+                  <li>
+                    Это язык разметки документа, пришедший на смену HTML4 и
+                    XHTML.
+                  </li>
+                  <li>
+                    Это набор веб-технологий, позволяющий делать на сайте всякие
+                    интересные штуки.
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="tab">
+              <input type="checkbox" id="tab2" name="tab-group" />
+              <label for="tab2" class="tab-title"
+                >Можно ли кодить на HTML5?</label
+              >
+              <section class="tab-content">
+                Нет, на HTML5 по прежнему нельзя программировать, основным
+                языком является JavaScript. Так что в разговоре лучше не
+                упоминать, что умеешь программировать на HTML5, засмеют.
+              </section>
+            </div>
+            <div class="tab">
+              <input type="checkbox" type="radio" id="tab3" name="tab-group" />
+              <label for="tab3" class="tab-title"
+                >Чем HTML5 отличается от HTML4?</label
+              >
+              <section class="tab-content">
+                В HTML5 добавлены новые элементы, вроде &lt;header&gt;,
+                &lt;footer&gt;, &lt;aside&gt;, &lt;article&gt;, появилась
+                долгожданная поддержка аудио, видео и многое другое.
+              </section>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <br />
+        <hr />
+        <h3>footer</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+          laborum laudantium quidem blanditiis a provident nihil, ex voluptatum
+          neque recusandae.
+        </p>
+        <a href="#top-of-site" class="top-of-site-link ico" data-visible="true">
+          <svg width="32" height="32" viewBox="0 0 100 100">
+            <path
+              fill="white"
+              d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+            ></path>
+          </svg>
+        </a>
+      </footer>
+    </main>
+
+    <script src="js/colorpicker.js"></script>
+    <script src="js/todo.js"></script>
+
+  </body>
+</html>

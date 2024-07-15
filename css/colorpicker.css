@@ -1,0 +1,92 @@
+:root {
+	--transparency: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill-opacity=".05"><rect width="50" height="50" /><rect x="50" y="50" width="50" height="50" /></svg>')
+	0 0 / 20px 20px #f8f8f8;
+	--h: 247; --s: 100; --l: 70; --a: 1;
+	--color: hsl(var(--h) var(--s) var(--l) / var(--a))
+}
+
+.colorPicker {
+	padding: 1em 2em;
+	margin: 0;
+	font: 100%/1.6 Helvetica Neue, sans-serif;
+}
+
+.color-slider {
+	display: block;
+	margin: 0 1em auto 0;
+	width: 100%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	/* background: linear-gradient(to right, var(--stops)), var(--transparency); */
+	height: 2.2em;
+	border-radius: .3em;
+	box-shadow: 0 0 1px hsl(0deg 0% 0% / 50%);
+}
+
+#hue {
+	background: linear-gradient(to right, 
+	hsl(0 var(--s) var(--l)), hsl(40 var(--s) var(--l)), hsl(80 var(--s) var(--l)),
+	hsl(120 var(--s) var(--l)), hsl(160 var(--s) var(--l)), hsl(200 var(--s) var(--l)),
+	hsl(240 var(--s) var(--l)), hsl(280 var(--s) var(--l)), hsl(320 var(--s) var(--l)),
+	hsl(360 var(--s) var(--l))
+	), var(--transparency);
+	}
+
+#saturation {
+	background: linear-gradient(to right, 
+	hsl(var(--h) 0% var(--l)), hsl(var(--h) 11.111% var(--l)), hsl(var(--h) 22.222% var(--l)),
+	hsl(var(--h) 33.333% var(--l)), hsl(var(--h) 44.444% var(--l)), hsl(var(--h) 55.556% var(--l)),
+	hsl(var(--h) 66.667% var(--l)), hsl(var(--h) 77.778% var(--l)), hsl(var(--h) 88.889% var(--l)),
+	hsl(var(--h) 100% var(--l))
+	), var(--transparency);
+    }
+
+	#lightness {
+		background: linear-gradient(to right, 
+		hsl(var(--h) var(--s) 0%), hsl(var(--h) var(--s) 11.111%), hsl(var(--h) var(--s) 22.222%),
+		hsl(var(--h) var(--s) 33.333%), hsl(var(--h) var(--s) 44.444%), hsl(var(--h) var(--s) 55.556%),
+		hsl(var(--h) var(--s) 66.667%), hsl(var(--h) var(--s) 77.778%), hsl(var(--h) var(--s) 88.889%),
+		hsl(var(--h) var(--s) 100%)
+		), var(--transparency);
+	}
+
+#alfa {
+	background: linear-gradient(to right,
+	hsl(var(--h) var(--s) var(--l) / 0),
+	hsl(var(--h) var(--s) var(--l) / 0.11111),
+	hsl(var(--h) var(--s) var(--l) / 0.22222),
+	hsl(var(--h) var(--s) var(--l) / 0.33333),
+	hsl(var(--h) var(--s) var(--l) / 0.44444),
+	hsl(var(--h) var(--s) var(--l) / 0.55556),
+	hsl(var(--h) var(--s) var(--l) / 0.66667),
+	hsl(var(--h) var(--s) var(--l) / 0.77778),
+	hsl(var(--h) var(--s) var(--l) / 0.88889),
+	hsl(var(--h) var(--s) var(--l) / 1)
+	), var(--transparency);
+}
+
+.color-slider::-webkit-slider-thumb {
+	width: 1em;
+	height: 2.3em;
+	-webkit-appearance: none;
+	border-radius: .4em;
+	border: 1px solid rgb(85, 85, 85);
+	box-shadow:
+	 rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
+	 rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
+};
+
+.color-slider::-moz-range-thumb {
+	width: 1em;
+	height: 2.3em;
+	border-radius: .4em;
+	border: 1px solid black;
+	box-shadow:
+	rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
+	rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
+	background: transparent;
+}
+
+.color-slider::-moz-range-track {
+	background: none;
+}
