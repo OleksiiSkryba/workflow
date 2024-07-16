@@ -168,15 +168,15 @@ constructor( id, name, surname , email, phone, order=[] ){
 }
 let clients = [];
 
- let petia = new Client(01,'Petia','Sidorov','tyu@hjk',8876554, ['bred']);
- let lesia = new Client(02, 'Lesia', 'Pupkina', 'zxc@mnb',98474689, ['bred', 'milk']);
- let lioha = new Client(03, 'Liosha', 'skryba','poi@ytr',6543328, ['bred', 'milk', 'buter']);
- let dasha = new Client(04, 'Dashenka', 'Kazakova','jhgf@dfgjh', '558930030568', ['bred', 'milk', 'buter', 'bumer']);
- let goga = new Client(05, 'Goga','Shvili', 'xmv@dlg', 6078-74, ['bred', 'milk', 'buter', 'silk', 'butter']);
- let petia1 = new Client(06,'Petia','Sidorov','tyu@hjk',8876554, ['bred', 'milk', 'buter','bred', 'milk', 'buter']);
- let lesia1 = new Client(07, 'Lesia', 'Pupkina', 'zxc@mnb',98474689, ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred']);
- let lioha1 = new Client(08, 'Liosha', 'skryba','poi@ytr',6543328, ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk']);
- let dasha1 = new Client(09, 'Dashenka', 'Kazakova','jhgf@dfgjh', '558930030568', ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk', 'buter']);
+ let petia = new Client(1,'Petia','Sidorov','tyu@hjk',8876554, ['bred']);
+ let lesia = new Client(2, 'Lesia', 'Pupkina', 'zxc@mnb',98474689, ['bred', 'milk']);
+ let lioha = new Client(3, 'Liosha', 'skryba','poi@ytr',6543328, ['bred', 'milk', 'buter']);
+ let dasha = new Client(4, 'Dashenka', 'Kazakova','jhgf@dfgjh', '558930030568', ['bred', 'milk', 'buter', 'bumer']);
+ let goga = new Client(5, 'Goga','Shvili', 'xmv@dlg', 6078-74, ['bred', 'milk', 'buter', 'silk', 'butter']);
+ let petia1 = new Client(6,'Petia','Sidorov','tyu@hjk',8876554, ['bred', 'milk', 'buter','bred', 'milk', 'buter']);
+ let lesia1 = new Client(7, 'Lesia', 'Pupkina', 'zxc@mnb',98474689, ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred']);
+ let lioha1 = new Client(8, 'Liosha', 'skryba','poi@ytr',6543328, ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk']);
+ let dasha1 = new Client(9, 'Dashenka', 'Kazakova','jhgf@dfgjh', '558930030568', ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk', 'buter']);
  let goga1 = new Client(10, 'Goga','Shvili', 'xmv@dlg', 6078-74, ['bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk', 'buter','bred', 'milk', 'buter']);
 clients.push(petia, lesia, lioha, dasha, goga, petia1,lesia1,lioha1, dasha1, goga1);
 
