@@ -422,8 +422,7 @@ function node(time) {
     } catch (error) {
       console.log(error);
     }
-
   }
   lern();
   
-                            
+          lo                
