@@ -425,4 +425,4 @@ function node(time) {
   }
   lern();
   
-          lo                
+                        
