@@ -418,7 +418,7 @@ function node(time) {
     let react1 = await react(js1);
     console.log(`осталось ${react1} !`);
     let node1 = await node(react1);
- console.log(`Finaly skils - ${smart}%. Go work after ${node1}. `);
+ console.log(`Finaly skils - ${smart}%. Go work after ${node1} day. `);
     } catch (error) {
       console.log(error);
     }
